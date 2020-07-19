@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <title>Congress API Site</title>
+  </head>
+  <body>
+    <h3 class="h3 text-center text-primary mb-5">
+      Welcome to the Congress API Site
+    </h3>
+
+    <div class="container">
+      <ul class="list-group">
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/legislators/locDists/-100,34"
+        >
+          Find Your Representatives
+        </a>
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/legislators/allLegislators"
+        >
+          Get All Legislators
+        </a>
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/legislators/legislator/A000055"
+          >Get Legislator</a
+        >
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/legislators/coordinates/TX"
+          >Get District Coordinates</a
+        >
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/votes/legislator/A000055/"
+          >Get Legislator Votes</a
+        >
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/votes/legislator/A000055/rollID/h82-2020/votedAt/2020-03-0314:07:00"
+          >Get Legislator Vote Last Key</a
+        >
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/committees/committee/committeeID/HSHA"
+          >Get Committee</a
+        >
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/committees/allCommittees"
+          >Get All Committees</a
+        >
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/bills/bill/billID/hr2-116"
+          >Get Bill</a
+        >
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/votes/billID/hr1-116"
+          >Get Votes for Bill</a
+        >
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/votes/billID/hr1-116/rollID/h116-2019/votedAt/2019-03-0810:33:00"
+          >Get Votes for Bill Last Key</a
+        >
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/nominations/allNominations"
+          >Get All Nominations</a
+        >
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/nominations/allNominations/nominationID/PN1693-116/latestActionDate/2020-03-16"
+          >Get All Nominations Last Key</a
+        >
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/nominations/nominationID/PN991-115"
+          >Get Nomination ID</a
+        >
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/votes/nominationID/PN991-115"
+          >Get Votes for Nomination</a
+        >
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/legislators/legislator/summary/M000087"
+          >Get Legislator Summary from ID</a
+        >
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/legislators/legislator/terms/A000055"
+          >Get Terms for Legislator</a
+        >
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/bills/bill/billID/s371-115/actions"
+          >Get Bill Actions</a
+        >
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/bills/bill/billID/hr4031-116/committees"
+          >Get Bill Committees</a
+        >
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/nominations/nomination/nominationID/PN1615-116/actions"
+          >Get Nomination Actions</a
+        >
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/committees/committee/committeeID/SLIN/members"
+          >Get Committee Members</a
+        >
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/committees/committee/committeeID/HSRU/subcommittees"
+          >Get Committee Subcommittees</a
+        >
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/legislators/legislator/B000575/committees"
+          >Get Legislator Subcommittees</a
+        >
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/votes/all"
+          >Get Votes</a
+        >
+        <a
+          class="list-group-item text-white text-center bg-primary"
+          href="/api/v1/votes/all"
+          >Get Votes Last Key</a
+        >
+      </ul>
+    </div>
+  </body>
+</html>
