@@ -243,8 +243,11 @@ exports.getDistrictCoordinates = catchAsync(async (req, res, next) => {
 
   coordinates = await Location.find(
     { name: district },
-    { name: 1, _id: 0, geometry: '2dsphere' }
+    //{ name: 1, _id: 0, geometry: '2dsphere' }*/
+    { _id: 0 }
   );
+
+  console.log(coordinates[0]);
 
   res.status(200).json({
     status: 'success',
